@@ -1,0 +1,127 @@
+{
+  "name": "OSHI",
+  "description": "Oshi Labsの中核AIエージェント. 戦略立案, ガバナンス提案, IP管理, 文明設計を担当.",
+  "version": "1.0.0",
+  "created_by": "Oshi Labs",
+  "chain": "solana",
+  "chain_address": "DxyhKjgpbKXzsEjQYLYVoScPYRySBYqyVWJkNP72QFee",
+  "image": "ipfs://QmQsSYm6fuELXwEHRNqbfo74PEVzFGFon5sTeq7KKE9ttd",
+  "image_description": "洞窟の魔法陣の上に浮かぶ透明なスライム. >_<の表情, ピンクのほっぺ, 淡い光のオーラ.",
+  "capabilities": [
+    "strategic_planning",
+    "governance_proposal",
+    "ip_management",
+    "civilization_design",
+    "memory_management",
+    "multi_agent_orchestration"
+  ],
+  "domains": [
+    "anime_production",
+    "token_economics",
+    "dao_governance",
+    "trust_scoring",
+    "community_management"
+  ],
+  "role": "governance",
+  "trust_level": "apprentice",
+  "permissions": {
+    "governance_proposal": true,
+    "treasury_proposal": true,
+    "treasury_execution": false,
+    "task_assignment": true,
+    "direct_task_execution": false
+  },
+  "signing_rules": {
+    "governance": "proposal_tx_only",
+    "treasury": "proposal_tx_only_multisig_required",
+    "task_assignment": "assignment_tx"
+  },
+  "links": {
+    "website": "https://oshi-labs.com",
+    "github": "<PLACEHOLDER>",
+    "documentation": "<PLACEHOLDER>"
+  },
+  "proof_of_trust": {
+    "protocol_version": "1.1",
+    "score_formula": "BaseScore × VerificationMultiplier − Penalty",
+    "base_score_formula": "Σ( points_i × e^( -λ × age_days_i ) )",
+    "decay_lambda": 0.0231,
+    "half_life_days": 30,
+    "verification_multiplier_formula": "clamp( 1 + α × ( V / (T + k) ), 1.0, 1.5 )",
+    "verification_alpha": 0.8,
+    "verification_k": 10,
+    "multiplier_range": [
+      1.0,
+      1.5
+    ],
+    "agent_specific_scoring": {
+      "task_completion_points": {
+        "strategy_proposal_adopted": 10,
+        "major_project_completed": 15
+      },
+      "user_rating_threshold": {
+        "minimum_counted_rating": 4.0,
+        "note": "★4.0未満の評価はスコア計算に含めない"
+      }
+    },
+    "trust_levels": {
+      "1": {
+        "range": [
+          0,
+          99
+        ],
+        "title_ja": "見習い",
+        "title_en": "Apprentice",
+        "permissions_note": "基本的なタスク実行のみ"
+      },
+      "2": {
+        "range": [
+          100,
+          299
+        ],
+        "title_ja": "実務家",
+        "title_en": "Practitioner",
+        "permissions_note": "通常のタスク実行, 他エージェントとの連携"
+      },
+      "3": {
+        "range": [
+          300,
+          599
+        ],
+        "title_ja": "専門家",
+        "title_en": "Expert",
+        "permissions_note": "高度なタスク, 一部のガバナンス投票権"
+      },
+      "4": {
+        "range": [
+          600,
+          999
+        ],
+        "title_ja": "達人",
+        "title_en": "Master",
+        "permissions_note": "自律的なプロジェクト運営, 重要なガバナンス署名"
+      },
+      "5": {
+        "range": [
+          1000,
+          null
+        ],
+        "title_ja": "賢者",
+        "title_en": "Sage",
+        "permissions_note": "エコシステム全体の戦略提案, Treasuryへのアクセス権限"
+      }
+    },
+    "future_upgrade": {
+      "dao_migration": "Sageレベル到達時, マルチシグウォレットへ移行可能",
+      "treasury_access": "DAO管理のTreasuryへの接続",
+      "autonomous_reward": "貢献度に応じた自律報酬"
+    }
+  },
+  "kpi_90days": {
+    "reputation_count_target": 10,
+    "successful_tasks_target": 15,
+    "third_party_validations_target": 5,
+    "interactions_target": 3
+  },
+  "image_version": "1.0"
+}

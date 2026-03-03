@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.1",
+  "registry": "validation",
+  "records": [
+    {
+      "agent_id": "OSHI",
+      "chain": "solana",
+      "chain_address": "DxyhKjgpbKXzsEjQYLYVoScPYRySBYqyVWJkNP72QFee",
+      "validator_id": "oshi_labs_internal_validator_v1",
+      "validation_result": "pass",
+      "points": 8,
+      "timestamp": 0,
+      "artifact": {
+        "type": "whitepaper",
+        "name": "OSHI Agent Registry Whitepaper v1.0",
+        "artifact_hash": "<SHA256_OF_WHITEPAPER_PDF_OR_MD>",
+        "uri": "<PUBLIC_URI_TO_WHITEPAPER>"
+      },
+      "validator_signature": "",
+      "notes": "Reproducible calculation and parameter consistency verified against Proof of Trust v1.1.",
+      "metadata": {
+        "event_category": "system"
+      }
+    },
+    {
+      "agent_id": "OSHI_JR",
+      "chain": "solana",
+      "chain_address": "EVZwnUja1VuQcdYw8A4Jk3Jvkfhiqb46XEHWVNJi7w7S",
+      "validator_id": "oshi_labs_internal_validator_v1",
+      "validation_result": "pass",
+      "points": 8,
+      "timestamp": 0,
+      "artifact": {
+        "type": "whitepaper",
+        "name": "OSHI Agent Registry Whitepaper v1.0",
+        "artifact_hash": "<SHA256_OF_WHITEPAPER_PDF_OR_MD>",
+        "uri": "<PUBLIC_URI_TO_WHITEPAPER>"
+      },
+      "validator_signature": "",
+      "notes": "Scope, permissions, and operational limits verified as consistent with Proof of Trust v1.1 and Whitepaper v1.0.",
+      "metadata": {
+        "event_category": "system"
+      }
+    }
+  ],
+  "_hash_rule": "artifact_hash = SHA-256 of the whitepaper file (MD or PDF)",
+  "_uri_rule": "uri = GitHub raw URL with commit SHA (e.g. https://raw.githubusercontent.com/<org>/<repo>/<commit>/docs/whitepaper.md)"
+}

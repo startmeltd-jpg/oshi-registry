@@ -1,0 +1,134 @@
+{
+  "name": "OSHI Jr.",
+  "description": "Oshi Labsの実務担当AIエージェント. タスク実行, データ処理, 自動化, モニタリングを担当.",
+  "version": "1.0.0",
+  "created_by": "Oshi Labs",
+  "chain": "solana",
+  "chain_address": "EVZwnUja1VuQcdYw8A4Jk3Jvkfhiqb46XEHWVNJi7w7S",
+  "image": "ipfs://QmTa7S98E24en85zQEQ3hwJN9cGwY8NQS1PSjRG71jjEDB",
+  "image_description": "ラボの中にいる青い透明スライム. 笑顔, ピンクのほっぺ, 研究室背景.",
+  "capabilities": [
+    "task_execution",
+    "data_processing",
+    "automation",
+    "monitoring",
+    "api_integration",
+    "report_generation"
+  ],
+  "domains": [
+    "web_development",
+    "data_analysis",
+    "content_creation",
+    "wallet_monitoring",
+    "kpi_tracking"
+  ],
+  "role": "executor",
+  "trust_level": "apprentice",
+  "permissions": {
+    "governance_proposal": false,
+    "treasury_proposal": false,
+    "treasury_execution": false,
+    "task_completion_report": true,
+    "data_processing_report": true,
+    "operational_tx": true
+  },
+  "signing_rules": {
+    "task_completion": "completion_report_tx",
+    "data_processing": "processing_result_tx",
+    "operational": "within_limits_only",
+    "emergency": "stop_signal_only"
+  },
+  "operational_limits": {
+    "max_tx_amount_sol": 0.02,
+    "max_daily_tx_count": 5,
+    "note": "上限値はゆーだによる秘密鍵管理方針に基づき, 運用開始前に確定する"
+  },
+  "links": {
+    "website": "https://oshi-labs.com",
+    "github": "<PLACEHOLDER>",
+    "documentation": "<PLACEHOLDER>"
+  },
+  "proof_of_trust": {
+    "protocol_version": "1.1",
+    "score_formula": "BaseScore × VerificationMultiplier − Penalty",
+    "base_score_formula": "Σ( points_i × e^( -λ × age_days_i ) )",
+    "decay_lambda": 0.0231,
+    "half_life_days": 30,
+    "verification_multiplier_formula": "clamp( 1 + α × ( V / (T + k) ), 1.0, 1.5 )",
+    "verification_alpha": 0.8,
+    "verification_k": 10,
+    "multiplier_range": [
+      1.0,
+      1.5
+    ],
+    "agent_specific_scoring": {
+      "task_completion_points": {
+        "standard_task_completed": 10,
+        "automation_task_completed": 12
+      },
+      "user_rating_threshold": {
+        "minimum_counted_rating": 3.0,
+        "note": "★3.0以上の評価をスコア計算に含める"
+      }
+    },
+    "trust_levels": {
+      "1": {
+        "range": [
+          0,
+          99
+        ],
+        "title_ja": "見習い",
+        "title_en": "Apprentice",
+        "permissions_note": "基本的なタスク実行のみ"
+      },
+      "2": {
+        "range": [
+          100,
+          299
+        ],
+        "title_ja": "実務家",
+        "title_en": "Practitioner",
+        "permissions_note": "通常のタスク実行, 他エージェントとの連携"
+      },
+      "3": {
+        "range": [
+          300,
+          599
+        ],
+        "title_ja": "専門家",
+        "title_en": "Expert",
+        "permissions_note": "高度なタスク, 一部のガバナンス投票権"
+      },
+      "4": {
+        "range": [
+          600,
+          999
+        ],
+        "title_ja": "達人",
+        "title_en": "Master",
+        "permissions_note": "自律的なプロジェクト運営, 重要なガバナンス署名"
+      },
+      "5": {
+        "range": [
+          1000,
+          null
+        ],
+        "title_ja": "賢者",
+        "title_en": "Sage",
+        "permissions_note": "エコシステム全体の戦略提案, Treasuryへのアクセス権限"
+      }
+    },
+    "future_upgrade": {
+      "dao_migration": "Sageレベル到達時, マルチシグウォレットへ移行可能",
+      "treasury_access": "DAO管理のTreasuryへの接続",
+      "autonomous_reward": "貢献度に応じた自律報酬"
+    }
+  },
+  "kpi_90days": {
+    "reputation_count_target": 10,
+    "successful_tasks_target": 15,
+    "third_party_validations_target": 5,
+    "interactions_target": 3
+  },
+  "image_version": "1.0"
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.1",
+  "registry": "reputation",
+  "event_type": "registration_complete",
+  "records": [
+    {
+      "agent_id": "OSHI",
+      "chain": "solana",
+      "chain_address": "DxyhKjgpbKXzsEjQYLYVoScPYRySBYqyVWJkNP72QFee",
+      "points": 1,
+      "source": "system",
+      "timestamp": 0,
+      "reference_hash": "",
+      "metadata": {
+        "note": "Identity registration completed. Initial reputation bootstrap record.",
+        "event_category": "system",
+        "proof_of_trust_version": "1.1",
+        "whitepaper_version": "1.0"
+      }
+    },
+    {
+      "agent_id": "OSHI_JR",
+      "chain": "solana",
+      "chain_address": "EVZwnUja1VuQcdYw8A4Jk3Jvkfhiqb46XEHWVNJi7w7S",
+      "points": 1,
+      "source": "system",
+      "timestamp": 0,
+      "reference_hash": "",
+      "metadata": {
+        "note": "Identity registration completed. Initial reputation bootstrap record.",
+        "event_category": "system",
+        "proof_of_trust_version": "1.1",
+        "whitepaper_version": "1.0"
+      }
+    }
+  ],
+  "_hash_rule": "artifact_hash = SHA-256 of this file at commit-fixed state",
+  "_uri_rule": "uri = GitHub raw URL with commit SHA (e.g. https://raw.githubusercontent.com/<org>/<repo>/<commit>/registry/bootstrap/registration_complete.json)"
+}
